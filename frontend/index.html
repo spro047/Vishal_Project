@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Portfolio | Design Student</title>
+    <meta name="description" content="Portfolio of a design student featuring illustrations, paintings, set designs, storyboards, and animations.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Vishal<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#work" class="active">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Visualizing the <span>Unseen.</span></h1>
+            <p class="hero-subtitle">Illustrations. Set Design. Paintings. Storyboards.</p>
+            <div class="scroll-indicator">
+                <span>Explore Work</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Background Canvas/Animation can go here -->
+        <div class="hero-bg">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="./assets/projets/DP%20DONE.mp4?v=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+    </header>
+
+    <!-- Main Content: Work & Gallery -->
+    <main id="work" class="portfolio-section">
+        
+        <div class="container">
+            <h2 class="section-heading">Selected <em>Works</em></h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="illustrations">Illustrations</button>
+                <button class="filter-btn" data-filter="paintings">Paintings</button>
+                <button class="filter-btn" data-filter="set-design">Set Design</button>
+                <button class="filter-btn" data-filter="projects">Projects</button>
+                <button class="filter-btn" data-filter="story-board">Story Board</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery">
+                <!-- Javascript will inject images here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="./assets/paintings/Screenshot%202026-02-28%20050207.png" alt="Portrait of Vishal">
+            </div>
+            <div class="about-content">
+                <h2 class="section-heading">About <em>Me</em></h2>
+                <p>Hello! I'm <strong>Vishal</strong>, a passionate design student dedicated to visualizing the unseen. My creative journey traverses the realms of digital illustrations, traditional paintings, set design, and storyboard creation.</p>
+                <p>I constantly strive to push the boundaries of my imagination to bring unique concepts to life. By blending traditional techniques with modern digital tools, I aim to craft compelling narratives through my visual art.</p>
+                <p>Whether I'm conceptualizing an environment or bringing a character to life, my focus is always on storytelling and detail.</p>
+                <a href="#contact" class="filter-btn mt-4">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Full view">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h2 class="footer-title">Let's Create Together.</h2>
+            <a href="mailto:hello@vishal.design" class="contact-email">hello@vishal.design</a>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Behance</a>
+                <a href="#">ArtStation</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Vishal. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
