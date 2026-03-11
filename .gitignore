@@ -1,0 +1,10 @@
+# Ignore large video files
+projets/animation/vishal\ ex\ 1\ ball\ rotation\ and\ box\ sliding.mp4
+projets/projets/DP\ DONE.mp4
+projets/set\ design\ and\ charater\ design/Roots\ over\ Rust.mp4
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
+.DS_Store
