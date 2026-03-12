@@ -28,6 +28,14 @@ Follow these steps to view the project locally:
    npx http-server frontend
    ```
 
+   ### Using the VS Code Live Server Extension
+   - Open the **Vishal_Project** workspace in VS Code.
+   - Right-click on `frontend/index.html` and choose **"Open with Live Server"**.
+   - Live Server will launch a local development URL (e.g. `http://127.0.0.1:5500/frontend/index.html`).
+   - The video and other assets are now accessible via the symlink at `frontend/assets/projets`.
+   - Make sure the Live Server root is set to the workspace root if prompted.
+
+
 4. **Exploring the Project Structure:**
    - `frontend/` contains `index.html`, CSS, JS, and assets used by the site.
    - `projets/` holds raw project content (videos/images), which are not tracked by Git due to size.
