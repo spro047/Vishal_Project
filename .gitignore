@@ -1,4 +1,7 @@
-# Ignore large video files
+# Ignore the entire raw projets folder (media files not needed in repo)
+projets/
+
+# Ignore large video files (redundant but explicit)
 projets/animation/vishal\ ex\ 1\ ball\ rotation\ and\ box\ sliding.mp4
 projets/projets/DP\ DONE.mp4
 projets/set\ design\ and\ charater\ design/Roots\ over\ Rust.mp4
